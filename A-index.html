@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <h2>JavaScript addEventlistener() </h2>
+    <p>This is the example of method to add two click events to the same button</p>
+    <button id="mybut">Try it</button>
+    <script>
+        var x = document.getElementById("mybut")
+        x.addEventListener("mouseover", () => {
+            alert("display mouse over")
+        })
+
+        x.addEventListener("click", () => {
+            alert("click ")
+        })
+
+        x.addEventListener("mouseout", () => {
+            alert("Display mouse out")
+        })
+
+    </script>
+</body>
+</html>
